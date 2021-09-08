@@ -13,6 +13,17 @@ public class ContainsFancyTest {
 
     //then
 Assertions.assertTrue(result);
+// Assertions.assertEquals(true, result);
 
     }
+
+
+    @Test
+    public void testNotContainFancy() {
+        String phrase = "hello";
+        boolean result = ContainsFancy.containsFancy(phrase);
+        Assertions.assertEquals(false, result);
+    }
+
+
 }
